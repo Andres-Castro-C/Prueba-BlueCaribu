@@ -10,12 +10,15 @@
 <body>
     <!--Header Menu Vertucal -->
     <header class="header-container"> 
+
+        <!-- Logo Empresa -->
         <section class="logo-empresa">
             <a href="">
                 <img src="../img/photos/logo_enpresa.png" alt="Logo Empresa">
             </a>
         </section>
 
+        <!--Menu de Iconos de navegacion-->
         <nav class="navegacion-icons">
             <a href="" class="hober">
                 <img src="../img/icon/icon_person.png" alt="icon person">
@@ -38,6 +41,7 @@
             </a>
         </nav>
 
+        <!-- Linea de Tiempo -->
         <section>
             <a href="">
                 <img src="../img/icon/icon _lineas.png" alt="icono lineas">
@@ -48,6 +52,7 @@
     <!-- Main Cartas Dinamicas-->
     <main class="main-container">
         <div class="card-personas-main">
+            <!-- Navegacion de Botones Main Formualrio, google Ads & ? -->
             <nav class="nav-main">
                 <section class="button-nav">
                     <button> Formulario </button>
@@ -59,6 +64,7 @@
                 </section>
             </nav>
 
+            <!-- Cartas Datos Persona-->
             <div class="card-container invisible-persona">
                 <section class="card1">
                     <h1> Datos De Contacto</h1>
@@ -128,6 +134,7 @@
                 </section>
             </div>
 
+            <!-- Cartas Datos Empresa-->
             <div class="card-container invisible-empresa">
                 <section class="card1">
                     <h1> Datos De Empresa</h1>
@@ -136,25 +143,25 @@
 
                 <section class="card2 card2-empresas">
                     <form action="" class="formulario">
-                        <ul class="container-fomulario">
+                        <ul class="container-fomulario formulario-empresa">
                             <li>
-                                <label for="nombre">Nombre</label>
-                                <input type="text" id="nombre" placeholder="Andres" required>
+                                <label for="empresa">Empresa</label>
+                                <input type="text" id="empresa" placeholder="BlueCaribu" required>
                             </li>
 
                             <li>
-                                <label for="apellido">Apellido</label>
-                                <input type="text" id="apellido" placeholder="Castro" required>
+                                <label for="pagina">Pagina Web</label>
+                                <input type="url" id="pagina" placeholder="https://www.bluecaribu.com/" required>
                             </li>
 
                             <li>
-                                <label for="email">Correo Electronico</label>
-                                <input type="email" id="email" placeholder="castro.an38@gmail.com" required>
+                                <label for="telefono-empresa">Telefono</label>
+                                <input type="number" id="telefono-empresa" placeholder="17941799" required>
                             </li>
 
                             <li>
-                                <label for="telefono">Celular/Tel</label>
-                                <input type="number" id="telefono" placeholder="3022985413" required>
+                                <label for="extencion">Extencion</label>
+                                <input type="number" id="extencion" placeholder="30229" required>
                             </li>
 
                             <button>
@@ -166,34 +173,40 @@
                     </form>
                 </section>
             </div>
-
+        
+            <!-- Cartas Datos Seguimiento-->
             <div class="card-container invisible-seguimiento">
                 <section class="card1">
-                    <h1> Datos De Empresa</h1>
-                    <img src="../img/photos/ilustracion_empresa.png" alt="ilustracion contacto">
+                    <h1> Datos De Seguimiento</h1>
+                    <img src="../img/photos/ilustracion_seguimiento.png" alt="ilustracion contacto">
                 </section>
 
-                <section class="card2 card2-empresas">
+                <section class="card2 card2-seguimiento">
                     <form action="" class="formulario">
                         <ul class="container-fomulario">
                             <li>
-                                <label for="nombre">Nombre</label>
-                                <input type="text" id="nombre" placeholder="Andres" required>
+                                <label for="notas">Observaciones</label>
+                                <input type="text" id="notas" placeholder="Añade Una Observacion" required>
                             </li>
 
                             <li>
-                                <label for="apellido">Apellido</label>
-                                <input type="text" id="apellido" placeholder="Castro" required>
+                                <label for="propietario">Propietario (Resposable)</label>
+                                <input type="text" id="propietario" placeholder="Descartado (no cualificado)" required>
                             </li>
 
                             <li>
-                                <label for="email">Correo Electronico</label>
-                                <input type="email" id="email" placeholder="castro.an38@gmail.com" required>
+                                <label for="url">Url de Origin</label>
+                                <input type="url" id="url" placeholder="https://www.bluecaribu.com/" required>
                             </li>
 
                             <li>
-                                <label for="telefono">Celular/Tel</label>
-                                <input type="number" id="telefono" placeholder="3022985413" required>
+                                <label for="fecha">Fecha de ultima accion</label>
+                                <input type="datetime-local" id="fecha" placeholder="20/09/2017 4:50pm" required>
+                            </li>
+
+                            <li>
+                                <label for="monto">Monto De Cierre (estimado)</label>
+                                <input type="number" id="monto" placeholder="$ 30.00 " required>
                             </li>
 
                             <button>

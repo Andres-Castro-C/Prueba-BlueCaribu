@@ -186,7 +186,11 @@ main{
     display: none;
 }
 
-/* Estilos de Crtas Empresa */
+.formulario-empresa{
+    gap: 15px;
+}
+
+/* Estilos de Cartas Empresa */
 .card2-empresas{
     display: flex;
     justify-content: center;
@@ -194,5 +198,7 @@ main{
 }
 
 .invisible-empresa{
-    /*display: none; */
+    display: none; 
 }
+
+/* Estilos de Carta Seguimiento */
