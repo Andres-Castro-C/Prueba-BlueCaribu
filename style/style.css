@@ -18,8 +18,10 @@ body{
     /*Colores*/
     --white:#FFFFFF;
     --black:#000000;
+    --morado: #843BE4;
+    --gris: #F1EFE8;
     /*Tamaño De Letas*/
-    --font-pequeñp: 14px;
+    --font-pequenio: 14px;
     --font-mediana: 16px;
     --font-grande: 20px;
     --fort-exgrande: 25px;
@@ -49,10 +51,148 @@ header img{
     width: 40px;
 }
 
+/* Main */
 main{
     background-color: var(--white);
     width: 90%;
     height: 92vh;
     margin: 20px 20px 20px 0px;
     border-radius: 20px;
+}
+
+
+.nav-main{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 45px 15px 45px;
+}
+
+.nav-main button{
+    width: 150px;
+    height: 30px;
+    background: var(--morado);
+    border: none;
+    border-radius: 15px;
+    color: var(--white);
+    font-size: var(--font-pequenio);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.button-nav :nth-child(2){
+    margin-left: 30px;
+ }
+
+.icono-preguntas img{
+    width: 50px;
+    height: 50px;
+}
+
+.card-container{
+    width: 90%;
+    height: auto;
+    margin: 0px 30px 10px 30px;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: auto;
+    gap: 35px;
+}
+
+.card1, .card2{
+    background-color: var(--gris);
+    height: 72vh;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+}
+
+.card1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card1 h1{
+    font-size: var(--fort-exgrande);
+    margin: 0 auto;
+    padding-top: 40px;
+    border-bottom: 2px solid var(--morado);
+}
+
+.card1 img{
+    width: 70%;
+    object-fit: contain;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.container-fomulario{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(5, auto);
+    gap: 5px;
+}
+
+.formulario{
+    margin-top: 10px;
+}
+
+.formulario label{
+    font-size: var(--font-mediana);
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.container-fomulario li{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.container-fomulario input{
+    border-radius: 15px;
+    border: none;
+    height: 25px;
+    width: 180px;
+    margin-top: 5px;
+    padding-left: 10px;
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);;
+}
+
+.container-fomulario input:focus{
+    border: 2px solid var(--morado);
+}
+
+.container-fomulario button{
+    grid-area: 6 / 2;
+    border: none;
+    width: 180px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.container-fomulario button p{
+    display: flex;
+    place-items: center;
+    justify-content: space-evenly;
+}
+
+.container-fomulario button img{
+    width: 30px;
+}
+
+/* Ocurtar la primera caratas de personas */
+.invisible-persona{
+    display: none;
+}
+
+/* Estilos de Crtas Empresa */
+.card2-empresas{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.invisible-empresa{
+    /*display: none; */
 }
