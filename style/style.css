@@ -183,7 +183,7 @@ main{
 
 /* Ocurtar la primera caratas de personas */
 .invisible-persona{
-    display: none;
+    
 }
 
 .formulario-empresa{
@@ -198,7 +198,7 @@ main{
 }
 
 .invisible-empresa{
-    display: none; 
+    display: none;
 }
 
 /* Estilos de Carta Seguimiento */
@@ -239,3 +239,219 @@ main{
     padding: 5px;
 }
 
+
+.invisible-GoogleAds{
+    display: none;
+}
+
+/* Crear carta de Notas & Acciones */
+
+/* Carta Izauqierda*/
+.botones-notas{
+    margin: 0 auto;
+}
+
+.button-nav-notas{
+    width: 250px;
+    height: 30px;
+    margin: 10px;
+    background-color: var(--white);
+    border: none;
+    border-radius: 15px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+}
+
+.button-nav-notas img{
+    width: 30px;
+    height: 30px;
+}
+
+.formualrio-notas{
+    height: 180px;
+    background-color: var(--white);
+    border-radius: 15px;
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 15px;
+    background-color: var(--gris);
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+}
+.formualrio-notas ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formualrio-notas ul li{
+    display: flex;
+    flex-direction: column;
+}
+.button-notas{
+    width: 100px;
+    height: 30px;
+    background: var(--morado);
+    border: none;
+    border-radius: 15px;
+    color: var(--white);
+    font-size: var(--font-pequenio);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.formualrio-notas input{
+    padding: 10px;
+    height: 85px;
+    width: 350px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+
+}
+
+.cardIzquierda{
+    background-color: var(--white);
+    border: none;
+    box-shadow: none;
+    display: grid;
+    grid-template-rows: auto;
+    gap: 15px;
+    margin: 0 auto;
+}
+
+/* Carta Derecha */
+.noticas{
+    background-color: var(--white);
+    border-radius: 15px;
+    width: 80%;
+    height: auto;
+    background-color: var(--gris);
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+}
+
+.noticas p{
+    font-size: 10px;
+}
+
+.noticas h4{
+    font-size: 12px;
+}
+
+.cardDerecha{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    background-color: var(--white);
+    border: none;
+    box-shadow: none;
+}
+
+.noticas{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    align-items: center;
+    place-items: center;
+    width: 95%;
+    justify-items: center;
+    text-align: center;
+}
+
+.noticas :nth-child(2){
+    font-size: 8px;
+}
+
+.noticas img{
+    width: 10px;
+}
+
+.noticas :nth-child(3){
+    grid-area: 2/1 / 2/3;
+}
+
+.noticas :nth-child(4){
+    grid-area: 3/1 / 3/3;
+}
+
+.cardDerecha button{
+    border: none;
+    width: 180px;
+    margin: 0 auto;
+    padding-top: 20px;
+    grid-area: 4/2;
+    background-color: var(--white);
+}
+
+.cardDerecha button p{
+    display: flex;
+    place-items: center;
+    justify-content: space-evenly;
+}
+
+.cardDerecha button img{
+    width: 30px;
+}
+
+.invisible-Notas{
+    display: none;
+}
+
+/* Estilo de Cartas de Línea de Tiempo */
+.graficas img{
+    width: 250px;
+}
+
+.graficas{
+    width: 350px;
+    text-align: center;
+    padding-top: 10px;
+    background-color: var(--gris);
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.linea-tiempo h1{
+    padding-top: 20px;
+}
+
+.eventos-linea{
+    grid-template-rows: repeat(4,1fr);
+}
+
+.eventos-linea img{
+    width: 20px;
+}
+
+.eventos-linea :nth-child(1){
+    grid-area: 1/2 / 2/3;
+}
+
+.eventos-linea :nth-child(2){
+    grid-area: 2/1 / 3 /4;
+}
+
+.eventos-linea :nth-child(3){
+    grid-area: 3/1 / 3/3;
+}
+
+.eventos-linea :nth-child(4){
+    grid-area: 4/2;
+    padding-top: 5px;
+}
+
+.linea-contaner button{
+    grid-area: 2/2;
+}
+
+.invisible-tiempo{
+    display: none;
+}
