@@ -12,60 +12,46 @@
     <header class="header-container"> 
 
         <!-- Logo Empresa -->
-        <section class="logo-empresa">
+        <nav class="logo-empresa">
             <a href="">
                 <img src="../img/photos/logo_enpresa.png" alt="Logo Empresa">
             </a>
-        </section>
+        </nav>
 
         <!--Menu de Iconos de navegacion-->
         <nav class="navegacion-icons">
-            <a href="" class="hober">
-                <img src="../img/icon/icon_person.png" alt="icon person">
-            </a>
-
-            <a href="">
-                <img src="../img/icon/icon_empresa.png" alt="icon empres">   
-            </a>
-
-            <a href="">
-                <img src="../img/icon/icon _seguridad.png" alt="icon seguridad">   
-            </a>
-
-            <a href="">
-                <img src="../img/icon/icon _seting.png" alt="icon condiguraciones">   
-            </a>
-
-            <a href="">
-                <img src="../img/icon/icon _folder.png" alt="icon notas">   
-            </a>
+            <img  class="icono_persona" src="../img/icon/icon_person.png" alt="icon persona">
+            <img class="icono_empresa" src="../img/icon/icon_empresa.png" alt="icon empres">
+            <img class="icono_seguridad" src="../img/icon/icon _seguridad.png" alt="icon seguridad">   
+            <img class="icono_seting" src="../img/icon/icon _seting.png" alt="icon condiguraciones">   
+            <img class="icono_folder" src="../img/icon/icon _folder.png" alt="icon notas">   
         </nav>
 
         <!-- Linea de Tiempo -->
-        <section>
-            <a href="">
-                <img src="../img/icon/icon _lineas.png" alt="icono lineas">
-            </a>
-        </section>
+        <nav>
+            <img class="icono_tiempo" src="../img/icon/icon _lineas.png" alt="icono lineas">
+        </nav>
     </header> 
 
     <!-- Main Cartas Dinamicas-->
     <main class="main-container">
         <div class="card-personas-main">
             <!-- Navegacion de Botones Main Formualrio, google Ads & ? -->
-            <nav class="nav-main">
+            <div class="nav-main">
                 <section class="button-nav">
                     <button> Formulario </button>
-                    <button> Google Abs</button>
+                    <button class="button-google"> Google Abs</button>
                 </section>
 
                 <section class="icono-preguntas">
-                    <img src="../img/icon/preguntas.png" alt="Logo preguntas">
+                    <nav>
+                        <img src="../img/icon/preguntas.png" alt="Logo preguntas">
+                    <nav>
                 </section>
-            </nav>
+            </div>
 
             <!-- Cartas Datos Persona-->
-            <div class="card-container invisible-persona">
+            <div class="card-container card-persona invisible-persona">
                 <section class="card1">
                     <h1> Datos De Contacto</h1>
                     <img src="../img/photos/ilustracion_persona.png" alt="ilustracion contacto">
@@ -135,7 +121,7 @@
             </div>
 
             <!-- Cartas Datos Empresa-->
-            <div class="card-container invisible-empresa">
+            <div class="card-container card-empresa invisible-empresa">
                 <section class="card1">
                     <h1> Datos De Empresa</h1>
                     <img src="../img/photos/ilustracion_empresa.png" alt="ilustracion contacto">
@@ -175,7 +161,7 @@
             </div>
         
             <!-- Cartas Datos Seguimiento-->
-            <div class="card-container invisible-seguimiento">
+            <div class="card-container card-seguimiento invisible-seguimiento">
                 <section class="card1">
                     <h1> Datos De Seguimiento</h1>
                     <img src="../img/photos/ilustracion_seguimiento.png" alt="ilustracion contacto">
@@ -225,7 +211,7 @@
             </div>
 
             <!-- Cartas Datos Personalizacion-->
-            <div class="card-container invisible-personalizacion">
+            <div class="card-container card-seting invisible-personalizacion">
                 <section class="card1">
                     <h1> Campos Personalizados </h1>
                     <img src="../img/photos/illustracion_personalizacion.png" alt="ilustracion personalizacion">
@@ -272,10 +258,10 @@
                         </ul>
                     </form>
                 </section>
-            </div>
+            </div> 
 
             <!-- Carta Notas & Acciones -->
-            <div  class="card-container invisible-Notas">
+            <div  class="card-container card-notas invisible-Notas">
                 <!-- Carta Izqueirda de Notas -->
                 <section class="card1  cardIzquierda">
                     <h1> Notas & Acciones </h1>
@@ -349,7 +335,7 @@
             </div>
 
             <!-- Carta Linea de Tiempo -->
-            <div  class="card-container invisible-tiempo">
+            <div  class="card-container card-tiempo invisible-tiempo">
                 <!-- Carta Izqueirda de Linea Tiempo -->
                 <section class="card1  cardIzquierda linea-tiempo">
                     <h1> Línea de Tiempo </h1>
@@ -401,11 +387,10 @@
                     </button>
 
                 </section>
-            </div>
-
+            </div>       
 
             <!-- Cartas Datos Google Ads -->
-            <div class="card-container invisible-GoogleAds">
+            <div class="card-container card-google invisible-GoogleAds">
                 <section class="card1 img-google">
                     <h1>
                         <img src="../img/photos/logo_googleAds.png" alt="logo Google Ads"> 
@@ -463,5 +448,7 @@
 
         </div>
     </main>
+
+    <script src="../src/index.js"></script>
 </body>
 </html>
