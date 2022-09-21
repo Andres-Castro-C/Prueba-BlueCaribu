@@ -63,6 +63,44 @@ header img{
     width: 40px;
 }
 
+.iconos-menu{
+    display: flex;
+}
+
+/*Ocultar esferita de menu de navegacion*/
+.mostar-icono{
+    display: none;
+}
+
+.mostar-icono2{
+    display: none;
+}
+
+.mostar-icono3{
+    display: none;
+}
+
+.mostar-icono4{
+    display: none;
+}
+
+.mostar-icono5{
+    display: none;
+}
+
+.mostar-icono6{
+    display: none;
+}
+
+
+
+
+.esfera-menu{
+    width: 10px;
+    height: 10px;
+}
+
+
 /* Main */
 main{
     background-color: var(--white);
@@ -191,6 +229,26 @@ main{
 
 .container-fomulario button img{
     width: 30px;
+}
+
+.menuUsuario{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    background-color: none;
+    width: 150px;
+    border-radius: 15px ;
+    list-style: none;
+    margin: 0px 10px;
+    justify-content: center;
+}
+
+.flotante{
+    display: none;
+}
+
+.flotante2{
+    display: none;
 }
 
 /* Ocurtar la primera caratas de personas */
