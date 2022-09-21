@@ -26,8 +26,13 @@ const card_notas = document.querySelector('.card-notas');
 const card_tiempo = document.querySelector('.card-tiempo');
 const card_google = document.querySelector('.card-google');
 
+//Variebles para menu florante UI guiar al usario 
 const flota_contacto = document.querySelector('.m1');
 const flota_empresa = document.querySelector('.m2')
+const flota_seguridad = document.querySelector('.m3');
+const flota_seting = document.querySelector('.m4');
+const flota_folfer = document.querySelector('.m5');
+const flota_tiempo = document.querySelector('.m6')
 
 //Llamado del envento click
 icono_persona.addEventListener('click', verCartaPersona);
@@ -41,6 +46,10 @@ button_google.addEventListener('click', verCartaGoogle);
 //Evento de pasar el mause para que flote una alerta
 icono_persona.addEventListener('mouseenter', contactoFLota)
 icono_empresa.addEventListener('mouseenter', contactoFLota)
+icono_seguridad.addEventListener('mouseenter', contactoFLota)
+icono_seting.addEventListener('mouseenter', contactoFLota)
+icono_folder.addEventListener('mouseenter', contactoFLota)
+icono_tiempo.addEventListener('mouseenter', contactoFLota)
 
 //Funciones del click 
 function verCartaPersona() {
@@ -87,7 +96,10 @@ function verCartaGoogle(){
 //Funciones de mouse
 function contactoFLota(){
     flota_contacto.classList.toggle('flotante');
-    flota_empresa.classList.toggle('flotante2')
+    flota_empresa.classList.toggle('flotante2');
+    flota_seguridad.classList.toggle('flotante3');
+    flota_seting.classList.toggle('flotante4');
+    flota_folfer.classList.toggle('flotante5');
+    flota_tiempo.classList.toggle('flotante6');
     console.log('flota');
 }
-
